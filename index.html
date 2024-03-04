@@ -20,6 +20,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <header
@@ -36,7 +42,7 @@
              <h3 class="w-16 lg:w-full">IUS Tube</h3> 
         </a>-->
         </div>
-        <div class="navbar-center">
+        <div class="navbar-center ms-20">
           <button
             onclick="handleSortByView()"
             class="btn bg-[#25252533] text-[#252525] lg:text-xl text-sm btn-sm lg:btn-md font-medium"
@@ -44,8 +50,22 @@
             Sort by View
           </button>
         </div>
-        <div class="navbar-center">
-          <input type="search" />
+        <div class="navbar-center ms-20">
+          <label class="input input-bordered flex items-center gap-2">
+            <input type="text" class="grow w-100" placeholder="Search" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-4 h-4 opacity-70"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </label>
         </div>
         <div class="navbar-end">
           <a
